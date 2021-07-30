@@ -1,10 +1,10 @@
-import React from 'react'
+import { Todo } from "./components/Todo";
+import TodosProvider from "./context/TodoContext";
 
 export function ChallengeComponent() {
   return (
-    <>
-      {/* Delete this h2, and add your own code here. */}
-      <h2 style={{ textAlign: 'center', paddingTop: 200, paddingBottom: 200 }}>Your code goes here</h2>
-    </>
-  )
+    <TodosProvider>
+      <Todo />
+    </TodosProvider>
+  );
 }
